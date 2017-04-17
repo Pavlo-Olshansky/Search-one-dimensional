@@ -49,9 +49,9 @@ class Dichotomy(Find_Interval):
 
 if __name__ == '__main__':
 
-    # print('Answer:',  Dichotomy([1, -200, 10000], 30, 5, 10).search_by_dichotome())
+    print('Answer:',  Dichotomy([1, -200, 10000], 30, 5, 10).search_by_dichotome())
     # Dichotomy([1, -200, 10000], 30, 5, 10).finder()
-
-    dichotomy = Dichotomy()
-    print('Sven method interval: ', dichotomy.finder(), '\nDichotomy method answer: ', dichotomy.search_by_dichotome())
+    #
+    # dichotomy = Dichotomy()
+    # print('Sven method interval: ', dichotomy.finder(), '\nDichotomy method answer: ', dichotomy.search_by_dichotome())
     input()

@@ -42,16 +42,19 @@ class Golden_cut(Find_Interval):
 
     def golden_cut(self):
         SvenMethod = Find_Interval(self.coeffs, self.starting_point, self.delta)
-        interval = SvenMethod.finder()
+        # interval = SvenMethod.finder()
+        interval = [8.3, 14.6]
+        # interval = [-6.3, -4.2]
         self.get_epsilon()
 
         return self.find_interval(interval, SvenMethod, interval[1] - interval[0])
 
 
 if __name__ == '__main__':
-    # golden_cut = Golden_cut([1, -200, 10000], 30, 5, 10)
-    # print('Sven method interval: ', golden_cut.finder(), '\nGolden cut answer: ', golden_cut.golden_cut())
+    golden_cut = Golden_cut([1, -28.6, 196.04], 2, 0.2, 0.2)
+    print('\nGolden cut answer: ', golden_cut.golden_cut())
+    #
+    # golden_cut_2 = Golden_cut()
+    # print('Sven method interval: ', golden_cut_2.finder(), '\nGolden cut method answer: ', golden_cut_2.golden_cut())
 
-    golden_cut_2 = Golden_cut()
-    print('Sven method interval: ', golden_cut_2.finder(), '\nGolden cut method answer: ', golden_cut_2.golden_cut())
     input()
